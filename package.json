@@ -1,0 +1,31 @@
+{
+  "name": "placeholder-page",
+  "version": "0.0.0",
+  "description": "A Clean, Pretty Placeholder Page",
+  "main": "source/index.html",
+  "devDependencies": {
+    "grunt": "^1.0.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-htmlmin": "^2.4.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "demo": "browser-sync start --server docs",
+    "serve-source": "browser-sync start --server source",
+    "start": "grunt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/bdsexton/placeholder-page.git"
+  },
+  "author": {
+    "name": "Brian Sexton",
+    "url": "https://briansexton.com/"
+  },
+  "license": "MIT"
+}
