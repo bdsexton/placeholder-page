@@ -91,7 +91,6 @@ If you would like to learn more about Browsersync's command line options, see [B
 I have a few thoughts:
 
 * There could probably be some further mobile optimization, especially with regard to background image sizes.
-* The build process could strip out HTML comments.
 * The build script could modify the stylesheet link so the version in the "source" folder could remain functional.
 * It might be nice to have an easy way to select whether to use a featured image or initial text as part of the build process rather than editing the HTML directly. That might be overkill, though.
 * I really like the idea of making a browser-based tool to make placeholder pages.
