@@ -4,6 +4,12 @@ Sometimes one needs a placeholder page, but default placeholder pages like the o
 
 I'll probably do something more interesting with this at some point—add a build script or maybe even make a generator web site—but for now there's HTML, CSS, a PNG image file, and a shortcut image file for you to customize or replace as you like.
 
+## Live Demo
+
+There should be a live demo running [here](https://bdsexton.github.io/placeholder-page/ "Placeholder Page"), but GitHub Pages does not seem to be serving the local stylesheet or image files. I am looking into it.
+
+The "docs" folder contains a minified version of the placeholder page that you can run locally. Either open index.html in your browser directly or, if you have both npm and Browsersync installed, type "npm demo" from the project folder on your command line.
+
 ## About the Background Photos
 
 The background photos are loaded from [Unsplash Source](https://source.unsplash.com/ "Unsplash Source | A Simple API for Embedding Free Photos from Unsplash"), which selects them at random from their featured mountain and lake pictures. Look for this line in **placeholder.css** if you want to change that:
