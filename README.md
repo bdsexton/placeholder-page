@@ -18,6 +18,24 @@ The HTML and CSS include both featured-image and initial-text options, so you ca
 
 There are also some combo buttons to use or remove as you prefer. If you do remove them and you haven't added anything else that uses Bootstrap, you can go ahead and remove the BootstrapCDN stylesheet link too.
 
+## Local Testing
+
+I like to use [Browsersync](https://browsersync.io/ "Browsersync - Time-saving synchronised browser testing") for local testing. You can use it with a task runner such as [Grunt](https://gruntjs.com/ "Grunt: The JavaScript Task Runner") or directly like so:
+
+```shell
+browser-sync start --server source
+```
+
+That "source" value after the --server argument tells Browsersync we want it to serve files from the "source" directory. I'll probably change that to "build" later.
+
+If you want Browsersync to start with a page other than index.html just tell it what page to use with an --index argument like so:
+
+```shell
+browser-sync start --server source --index hello.html
+```
+
+If you would like to learn more about Browsersync's command line options, see [Browsersync Command Line Usage](https://browsersync.io/docs/command-line "Browsersync Command Line Usage").
+
 ## Credits
 
 This project was designed and developed by [Brian Sexton](https://briansexton.com/).
