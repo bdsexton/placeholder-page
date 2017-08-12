@@ -68,7 +68,7 @@ grunt
 
 ## Local Testing
 
-I like to use [Browsersync](https://browsersync.io/ "Browsersync - Time-saving synchronised browser testing") for local testing. You can use it with a task runner such as [Grunt](https://gruntjs.com/ "Grunt: The JavaScript Task Runner") or directly like so:
+I like to use [Browsersync](https://browsersync.io/ "Browsersync - Time-saving synchronised browser testing") for local testing. You can use it with a task runner such as [Grunt](https://gruntjs.com/ "Grunt: The JavaScript Task Runner") as mentioned above or you can use it directly like so:
 
 ```shell
 browser-sync start --server build
@@ -89,10 +89,9 @@ If you would like to learn more about Browsersync's command line options, see [B
 I have a few thoughts:
 
 * There could probably be some further mobile optimization, especially with regard to background image sizes.
-* The build script could modify the stylesheet link so the version in the "source" folder could remain functional.
 * It might be nice to have an easy way to select whether to use a featured image or initial text as part of the build process rather than editing the HTML directly. That might be overkill, though.
 * I really like the idea of making a browser-based tool to make placeholder pages.
-* Perhaps I should offer a download of just the essential files for people who are not inclined to use repositories, build scripts, and magic spells.
+* Perhaps I should offer a download of just the essential files without the tooling.
 
 ## Credits
 
