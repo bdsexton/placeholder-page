@@ -30,7 +30,9 @@ There are also some combo buttons to use or remove as you prefer. If you do remo
 
 ### Using the Placeholder Page Without Building
 
-If you would like to use the placeholder page with the HTML and CSS as they are in the "source" folder, just delete the ".min" from the link to the "placeholder.min.css" stylesheet near the top of index.html. You might want to manually add the contents of _file-header.css or something similar to the top of placeholder.css.
+If you would like to use the placeholder page with the HTML and CSS as they are in the "source" folder, you can do so easily. Just change "placeholder.min.css" to "placeholder.css" in one of the stylesheet links at the top of index.html.
+
+**Optional:** You may want to manually add the contents of _file-header.css or something similar to the top of placeholder.css.
 
 ### Building the Placeholder Page
 
@@ -84,6 +86,7 @@ I have a few thoughts:
 
 * There could probably be some further mobile optimization, especially with regard to background image sizes.
 * The build process could strip out HTML comments.
+* The build script could modify the stylesheet link so the version in the "source" folder could remain functional.
 * It might be nice to have an easy way to select whether to use a featured image or initial text as part of the build process rather than editing the HTML directly. That might be overkill, though.
 * I really like the idea of making a browser-based tool to make placeholder pages.
 
