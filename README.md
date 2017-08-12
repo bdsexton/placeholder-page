@@ -18,4 +18,4 @@ The lovely background images are provided by [Unsplash](https://unsplash.com/ "U
 
 Button styling is provided by [Bootstrap](https://getbootstrap.com/) via [BootstrapCDN](https://www.bootstrapcdn.com/ "Quick Start · BootstrapCDN by MaxCDN").
 
-The Bree Serif font is provided by [Type Together](http://www.type-together.com/ "Type Together : High quality fonts and custom type design") via [Google Fonts](https://fonts.google.com/).
+The [Bree Serif](https://fonts.google.com/specimen/Bree+Serif "Bree Serif - Google Fonts") font is provided by [Type Together](http://www.type-together.com/ "Type Together : High quality fonts and custom type design") via [Google Fonts](https://fonts.google.com/).
