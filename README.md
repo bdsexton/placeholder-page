@@ -6,7 +6,7 @@ I'll probably do something more interesting with this at some point—add a buil
 
 ## About the Background Photos
 
-The background photos are loaded from [Unsplash Source](https://source.unsplash.com/ "Unsplash Source | A Simple API for Embedding Free Photos from Unsplash"), which selects them at random from their mountain and lake pictures. Look for this line in **placeholder.css** if you want to change that:
+The background photos are loaded from [Unsplash Source](https://source.unsplash.com/ "Unsplash Source | A Simple API for Embedding Free Photos from Unsplash"), which selects them at random from their featured mountain and lake pictures. Look for this line in **placeholder.css** if you want to change that:
 
 ```css
 background: #ccc url(https://source.unsplash.com/featured/?mountain,lake) center center/cover fixed;
