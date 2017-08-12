@@ -4,6 +4,14 @@ Sometimes one needs a placeholder page, but default placeholder pages like the o
 
 I'll probably do something more interesting with this at some point—add a build script or maybe even make a generator web site—but for now there's HTML, CSS, a PNG image file, and a shortcut image file for you to customize or replace as you like.
 
+## About the Background Photos
+
+The background photos are loaded from [Unsplash Source](https://source.unsplash.com/ "Unsplash Source | A Simple API for Embedding Free Photos from Unsplash"), which selects them at random from their mountain and lake pictures. Look for this line in **placeholder.css** if you want to change that:
+
+```css
+background: #ccc url(https://source.unsplash.com/featured/?mountain,lake) center center/cover fixed;
+```
+
 ## Options
 
 The HTML and CSS include both featured-image and initial-text options, so you can easily add a logo or a picture of your smiling mug if you prefer.
