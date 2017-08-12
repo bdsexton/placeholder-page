@@ -30,22 +30,19 @@ The HTML and CSS include both featured-image and initial-text options, so you ca
 
 There are also some combo buttons to use or remove as you prefer. If you do remove them and you haven't added anything else that uses Bootstrap, you can go ahead and remove the BootstrapCDN stylesheet link too.
 
-## To Build or Not to Build…
+## Getting Started
 
-**Building the placeholder page yourself is optional.**
+### Quick Start: Ready-to-Use Files
 
-### Using the Placeholder Page Without Building
+The files in the "source" folder are ready to customize and use. They do not require any assembly or processing. Feel free to use them as you like with the tools of your choice.
 
-If you would like to use the placeholder page with the HTML and CSS as they are in the "source" folder, you can do so easily. Just change "placeholder.min.css" to "placeholder.css" in one of the stylesheet links at the top of index.html.
+### The Completely Optional Build System
 
-**Optional:** You may want to manually add the contents of _file-header.css or something similar to the top of placeholder.css.
-
-### Building the Placeholder Page
-
-Even though this is a simple project, there is a build script to assemble and minify the CSS, minify the HTML, and make copies of everything in a new folder. There are a few reasons I've set things up this way, including:
+Even though this is a simple project, there is a build script to minify the HTML and CSS, make copies of everything in a new folder, and apply some finishing touches. There are a few reasons I've set things up this way, including:
 
 * Minified files take less bandwidth. How much less depends upon the sizes of the source files, but this project loads large images, so I'll take every little bit of bandwidth savings I can get.
-* Separating the CSS into two files then recombining them means one can be minified and the other left alone, allowing important CSS comments to stay intact through minification.
+* Modifying the HTML automatically allows the ready-to-use and built versions of the placeholder page to use different stylesheets without requiring a manual change.
+* The CSS can be minified without losing its header comments.
 * I would like to experiment with some tool-assisted customizations.
 
 First you'll need to make sure you have the project's dependencies.
