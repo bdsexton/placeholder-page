@@ -1,0 +1,14 @@
+@charset "utf-8";
+/*============================================================================*\
+	CSS for Placeholder Pages
+	------------------------------------------------------------------------
+	Designed and Built by Brian Sexton
+	https://briansexton.com/
+	------------------------------------------------------------------------
+	© 2017 Brian Sexton
+	------------------------------------------------------------------------
+	Thanks to Unsplash (https://unsplash.com/), Unsplash Source
+	(https://source.unsplash.com/), and their contributors for the
+	background images.
+\*============================================================================*/
+h1,h2{margin:1em 0 0}body{background:url(https://source.unsplash.com/featured/?mountain,lake) center center/cover fixed #ccc;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0;height:80vh;margin:0}body>header{text-align:center}h1{font-family:'Bree Serif',serif;text-shadow:2px 2px 2px #000}h2{border-radius:1em;background-color:rgba(0,0,0,.25);padding:.5em .75em;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:1.5em;font-weight:400;text-shadow:2px 2px 2px #333}body>header>img.featured{display:block;width:256px;height:222px;opacity:.75}body>header>p.initial{display:flex;font-family:'Bree Serif',serif;font-size:10em;align-items:center;justify-content:center;background:url(../images/hexagon-007889-512x444.png) center center/256px 222px no-repeat;width:256px;height:222px;opacity:.75}.buttons{margin:2em 0 0}.btn-group+.btn-group{margin-left:1em}
