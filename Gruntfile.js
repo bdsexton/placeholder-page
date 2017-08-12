@@ -102,12 +102,16 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('finalize-build', 'Apply finishing touches to complete the build.',  function() {
 
+		var html;
+
+		// HTML replacement
+
 		grunt.log.writeln('Replacing placeholder.css with placeholder.min.css in build/index.html.');
 
-		var content = grunt.file.read('build/index.html');
+		html = grunt.file.read('build/index.html');
 
-		content = content.replace('placeholder.css', 'placeholder.min.css');
+		html = html.replace('placeholder.css', 'placeholder.min.css');
 
-		grunt.file.write('build/index.html', content);
+		grunt.file.write('build/index.html', html);
 	});
 };
