@@ -94,6 +94,7 @@ I have a few thoughts:
 * The build script could modify the stylesheet link so the version in the "source" folder could remain functional.
 * It might be nice to have an easy way to select whether to use a featured image or initial text as part of the build process rather than editing the HTML directly. That might be overkill, though.
 * I really like the idea of making a browser-based tool to make placeholder pages.
+* Perhaps I should offer a download of just the essential files for people who are not inclined to use repositories, build scripts, and magic spells.
 
 ## Credits
 
