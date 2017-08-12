@@ -6,9 +6,11 @@ I'll probably do something more interesting with this at some point—add a buil
 
 ## Live Demo
 
-You can see a live demo running [here](https://bdsexton.github.io/placeholder-page/ "Placeholder Page") or locally.
+You can see a live demo running [here](https://bdsexton.github.io/placeholder-page/ "Placeholder Page").
 
-The "docs" folder contains a minified version of the placeholder page that you can run locally. Either open index.html in your browser directly or, if you have both npm and Browsersync installed, enter the following at your command line:
+### Running the Live Demo Locally
+
+GitHub Pages serves the above linked page from the "docs" folder, which contains a minified version of the placeholder page with a "Fork me on GitHub" banner. If you would like to run that already-built version locally, either open index.html in your browser directly or, if you have both npm and Browsersync installed, enter the following at your command line:
 
 ```shell
 npm run demo
