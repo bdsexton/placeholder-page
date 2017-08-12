@@ -80,8 +80,8 @@ module.exports = function(grunt) {
 				files: 'source/_assets/styles/*.css',
 				tasks: ['cssmin:build', 'concat:css']
 			},
-			css: {
-				files: '*.html',
+			html: {
+				files: 'source/*.html',
 				tasks: ['htmlmin:build']
 			}
 		}
