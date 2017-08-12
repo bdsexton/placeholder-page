@@ -96,7 +96,18 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('build', ['htmlmin:build', 'cssmin:build', 'concat:css', 'copy']);
+	grunt.registerTask('build', ['htmlmin:build', 'cssmin:build', 'concat:css', 'copy', 'finalize-build']);
 
 	grunt.registerTask('default', ['clean', 'build', 'browserSync', 'watch']);
+
+	grunt.registerTask('finalize-build', 'Apply finishing touches to complete the build.',  function() {
+
+		grunt.log.writeln('Replacing placeholder.css with placeholder.min.css in build/index.html.');
+
+		var content = grunt.file.read('build/index.html');
+
+		content = content.replace('placeholder.css', 'placeholder.min.css');
+
+		grunt.file.write('build/index.html', content);
+	});
 };
