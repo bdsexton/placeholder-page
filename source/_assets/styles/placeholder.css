@@ -82,7 +82,7 @@ body > header > p.initial
 	align-items: center;
 	justify-content: center;
 
-	background: url(../images/icons/hexagon-007889-512x444.png) center center/256px 222px no-repeat;
+	background: url(../images/hexagon-007889-512x444.png) center center/256px 222px no-repeat;
 
 	width: 256px; /* Half of the intrinsic image width. */
     height: 222px; /* Half of the intrinsic image height. */
