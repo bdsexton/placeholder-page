@@ -25,17 +25,6 @@ module.exports = function(grunt) {
 			}
 		},
 
-		concat: {
-			css: {
-				nonull: true,
-				src: [
-					'source/_assets/styles/_file-header.css',
-					'build/_assets/styles/placeholder.min.css'
-				],
-				dest: 'build/_assets/styles/placeholder.min.css'
-			}
-		},
-
 		copy: {
 			build: {
 				files: [
@@ -79,7 +68,7 @@ module.exports = function(grunt) {
 		watch: {
 			css: {
 				files: 'source/_assets/styles/*.css',
-				tasks: ['cssmin:build', 'concat:css']
+				tasks: ['cssmin:build']
 			},
 			html: {
 				files: 'source/*.html',
@@ -90,13 +79,12 @@ module.exports = function(grunt) {
 
 	grunt.loadNpmTasks('grunt-browser-sync');
 	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
-	grunt.registerTask('build', ['htmlmin:build', 'cssmin:build', 'concat:css', 'copy', 'finalize-build']);
+	grunt.registerTask('build', ['htmlmin:build', 'cssmin:build', 'copy', 'finalize-build']);
 
 	grunt.registerTask('default', ['clean', 'build', 'browserSync', 'watch']);
 
