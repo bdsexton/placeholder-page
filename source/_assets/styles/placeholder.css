@@ -1,17 +1,3 @@
-@charset "utf-8";
-/*============================================================================*\
-	CSS for Placeholder Pages
-	------------------------------------------------------------------------
-	Designed and Built by Brian Sexton
-	https://briansexton.com/
-	------------------------------------------------------------------------
-	© 2017 Brian Sexton
-	------------------------------------------------------------------------
-	Thanks to Unsplash (https://unsplash.com/), Unsplash Source
-	(https://source.unsplash.com/), and their contributors for the
-	background images.
-\*============================================================================*/
-
 body
 {
 	background: #ccc url(https://source.unsplash.com/featured/?mountain,lake) center center/cover fixed;
