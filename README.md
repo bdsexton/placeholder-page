@@ -38,11 +38,12 @@ The files in the "source" folder are ready to customize and use. They do not req
 
 ### The Completely Optional Build System
 
-Even though this is a simple project, there is a build script to minify the HTML and CSS, make copies of everything in a new folder, and apply some finishing touches. There are a few reasons I've set things up this way, including:
+Even though this is a simple project, there is a build script to minify the HTML and CSS, make copies of everything in a new folder, apply some finishing touches, and respond to changes. There are a few reasons I've set things up this way, including:
 
 * Minified files take less bandwidth. How much less depends upon the sizes of the source files, but this project loads large images, so I'll take every little bit of bandwidth savings I can get.
 * Modifying the HTML automatically allows the ready-to-use and built versions of the placeholder page to use different stylesheets without requiring a manual change.
 * The CSS can be minified without losing its header comments.
+* Customizing the placeholder page can be an easier and more pleasurable experience when Grunt and Browsersync keep things updated for you as you work.
 * I would like to experiment with some tool-assisted customizations.
 
 First you'll need to make sure you have the project's dependencies.
@@ -51,7 +52,7 @@ First you'll need to make sure you have the project's dependencies.
 npm install
 ```
 
-After that, building is easy.
+After that, building manually is easy.
 
 ```shell
 grunt build
