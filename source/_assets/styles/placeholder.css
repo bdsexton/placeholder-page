@@ -37,7 +37,7 @@ h2
 
 	background-color: rgba(0,0,0,0.25);
 
-    padding: 0.5em 0.75em;
+	padding: 0.5em 0.75em;
 
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: 1.5em;
@@ -53,7 +53,7 @@ body > header > img.featured
 	display: block;
 
 	width: 256px; /* Half of the intrinsic image width. */
-    height: 222px; /* Half of the intrinsic image height. */
+	height: 222px; /* Half of the intrinsic image height. */
 
 	opacity: 0.75
 }
@@ -71,7 +71,7 @@ body > header > p.initial
 	background: url(../images/hexagon-007889-512x444.png) center center/256px 222px no-repeat;
 
 	width: 256px; /* Half of the intrinsic image width. */
-    height: 222px; /* Half of the intrinsic image height. */
+	height: 222px; /* Half of the intrinsic image height. */
 
 	opacity: 0.75
 }
