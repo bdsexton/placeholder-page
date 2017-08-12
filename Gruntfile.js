@@ -102,6 +102,11 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('finalize-build', 'Apply finishing touches to complete the build.',  function() {
 
+		var css;
+		var cssHeader;
+		var cssHeaderMatches;
+		var cssHeaderRegExp = /(@charset "[^"]*";)[\s\S]*?\*\//;
+
 		var html;
 
 		// HTML replacement
@@ -113,5 +118,27 @@ module.exports = function(grunt) {
 		html = html.replace('placeholder.css', 'placeholder.min.css');
 
 		grunt.file.write('build/index.html', html);
+
+		// CSS header restoration
+
+		css = grunt.file.read('source/_assets/styles/placeholder.css');
+
+		cssHeaderMatches = cssHeaderRegExp.exec(css);
+
+		if (cssHeaderMatches !== null) {
+
+			grunt.log.writeln('Restoring header in placeholder.min.css.');
+
+			css = grunt.file.read('build/_assets/styles/placeholder.min.css');
+
+			css = css.replace(cssHeaderMatches[1], cssHeaderMatches[0] + '\n');
+
+			grunt.file.write('build/_assets/styles/placeholder.min.css', css);
+		}
+
+		else {
+
+			grunt.log.writeln('CSS header not found. Unable to restore.');
+		}
 	});
 };
