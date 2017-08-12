@@ -24,6 +24,42 @@ The HTML and CSS include both featured-image and initial-text options, so you ca
 
 There are also some combo buttons to use or remove as you prefer. If you do remove them and you haven't added anything else that uses Bootstrap, you can go ahead and remove the BootstrapCDN stylesheet link too.
 
+## To Build or Not to Build…
+
+**Building the placeholder page yourself is optional.**
+
+### Using the Placeholder Page Without Building
+
+If you would like to use the placeholder page with the HTML and CSS as they are in the "source" folder, just delete the ".min" from the link to the "placeholder.min.css" stylesheet near the top of index.html. You might want to manually add the contents of _file-header.css or something similar to the top of placeholder.css.
+
+### Building the Placeholder Page
+
+Even though this is a simple project, there is a build script to assemble and minify the CSS, minify the HTML, and make copies of everything in a new folder. There are a few reasons I've set things up this way, including:
+
+* Minified files take less bandwidth. How much less depends upon the sizes of the source files, but this project loads large images, so I'll take every little bit of bandwidth savings I can get.
+* Separating the CSS into two files then recombining them means one can be minified and the other left alone, allowing important CSS comments to stay intact through minification.
+* I would like to experiment with some tool-assisted customizations.
+
+First you'll need to make sure you have the project's dependencies.
+
+```shell
+npm install
+```
+
+After that, building is easy.
+
+```shell
+grunt build
+```
+
+If you would like to work in the source folder and have your changes automatically built and displayed in your browser via Browsersync, just use the default Grunt task.
+
+```shell
+grunt
+```
+
+*Warning: The default Grunt task starts by deleting the "build" folder.*
+
 ## Local Testing
 
 I like to use [Browsersync](https://browsersync.io/ "Browsersync - Time-saving synchronised browser testing") for local testing. You can use it with a task runner such as [Grunt](https://gruntjs.com/ "Grunt: The JavaScript Task Runner") or directly like so:
@@ -41,6 +77,15 @@ browser-sync start --server build --index hello.html
 ```
 
 If you would like to learn more about Browsersync's command line options, see [Browsersync Command Line Usage](https://browsersync.io/docs/command-line "Browsersync Command Line Usage").
+
+## Room for Improvement
+
+I have a few thoughts:
+
+* There could probably be some further mobile optimization, especially with regard to background image sizes.
+* The build process could strip out HTML comments.
+* It might be nice to have an easy way to select whether to use a featured image or initial text as part of the build process rather than editing the HTML directly. That might be overkill, though.
+* I really like the idea of making a browser-based tool to make placeholder pages.
 
 ## Credits
 
