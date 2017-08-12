@@ -6,9 +6,13 @@ I'll probably do something more interesting with this at some point—add a buil
 
 ## Live Demo
 
-There should be a live demo running [here](https://bdsexton.github.io/placeholder-page/ "Placeholder Page"), but GitHub Pages does not seem to be serving the local stylesheet or image files. I am looking into it.
+You can see a live demo running [here](https://bdsexton.github.io/placeholder-page/ "Placeholder Page") or locally.
 
-The "docs" folder contains a minified version of the placeholder page that you can run locally. Either open index.html in your browser directly or, if you have both npm and Browsersync installed, type "npm demo" from the project folder on your command line.
+The "docs" folder contains a minified version of the placeholder page that you can run locally. Either open index.html in your browser directly or, if you have both npm and Browsersync installed, enter the following at your command line:
+
+```shell
+npm run demo
+```
 
 ## About the Background Photos
 
