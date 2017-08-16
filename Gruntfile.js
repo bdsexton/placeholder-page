@@ -68,11 +68,11 @@ module.exports = function(grunt) {
 		watch: {
 			css: {
 				files: 'source/_assets/styles/*.css',
-				tasks: ['cssmin:build']
+				tasks: ['cssmin:build', 'finalize-build']
 			},
 			html: {
 				files: 'source/*.html',
-				tasks: ['htmlmin:build']
+				tasks: ['htmlmin:build', 'finalize-build']
 			}
 		}
 	});
