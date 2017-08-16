@@ -89,6 +89,7 @@ If you would like to learn more about Browsersync's command line options, see [B
 I have a few thoughts:
 
 * There could probably be some further mobile optimization, especially with regard to background image sizes.
+* The finalize-build task could be split up so the watch task could run just the portion of it that is relevant to the current target, eliminating some superfluous processing and file writing.
 * It might be nice to have an easy way to select whether to use a featured image or initial text as part of the build process rather than editing the HTML directly. That might be overkill, though.
 * I really like the idea of making a browser-based tool to make placeholder pages.
 * Perhaps I should offer a download of just the essential files without the tooling.
