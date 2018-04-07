@@ -4,5 +4,12 @@ node_modules/
 # macOS
 .DS_Store
 
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# JetBrains IDEs
+.idea/
+
 # Project
 build/
